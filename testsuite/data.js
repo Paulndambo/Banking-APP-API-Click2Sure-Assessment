@@ -1,6 +1,6 @@
-export default [
+accounts = [
     {
-        "account_number": "1233748383",
+        "account_number": "1233eedderrsss748383",
         "bank_name": "NATIONAL BANK KENYA",
         "account_name": "Test Account",
         "account_type": "Savings",
@@ -8,7 +8,7 @@ export default [
         "user": 1
     },
     {
-        "account_number": "123374458383",
+        "account_number": "1233rtt74ij76djs458383",
         "bank_name": "EQUITY BANK KENYA",
         "account_name": "Test Account",
         "account_type": "Credit",
@@ -16,7 +16,7 @@ export default [
         "user": 2
     },
     {
-        "account_number": "12337480098383",
+        "account_number": "123dd3sssfdsuu7480098383",
         "bank_name": "NATIONAL BANK KENYA",
         "account_name": "Test Account",
         "account_type": "Savings",
@@ -24,3 +24,5 @@ export default [
         "user": 3
     },
 ]
+
+module.exports = accounts;
