@@ -15,7 +15,7 @@ cursor = connection.cursor()
 #CRUD For Bank Accounts Only Accessible To Admin Users Only
 class BankAccountViewSet(ModelViewSet):
     serializer_class = BankAccountSerializer
-    #permission_classes = (permissions.IsAdminUser,)
+    permission_classes = (permissions.IsAdminUser,)
     queryset = Account.objects.all()
 
 # Returns Bank Transactions of A Specific User By ID
