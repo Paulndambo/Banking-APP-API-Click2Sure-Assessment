@@ -7,7 +7,7 @@ const chaiHttp = require("chai-http");
 chai.should();
 chai.use(chaiHttp);
 
-token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ1ODUzNDc4LCJpYXQiOjE2NDU2NzM0NzgsImp0aSI6ImM2MzQ4MmM3YWY5YjRhMTE5ZjJjMjg0MWViY2IzMThjIiwidXNlcl9pZCI6MX0.bfJztIHjF_KJMoyNNb4x4G-v_u7YMGS-i9Ea9IKCRG8"
+token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjQ4MjcwNDIzLCJpYXQiOjE2NDU2Nzg0MjMsImp0aSI6IjAzNDFjOTcyZGZkMDQ5YTU4Y2IwNTk5ZGQyYjkxNTQyIiwidXNlcl9pZCI6MX0.VeWDUngFzkDwv9MfSpFpH7DmLqDD8xyWcnmEvMMxE_o"
 
 describe('BANK ACCOUNTS API', () => {
 
