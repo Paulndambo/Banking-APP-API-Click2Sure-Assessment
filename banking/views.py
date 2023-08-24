@@ -81,6 +81,7 @@ class MakeBankTransaction(generics.GenericAPIView):
 
                 serializer.save()
                 return Response(serializer.data, status=status.HTTP_201_CREATED)
+                
             elif serializer.validated_data["transaction_type"] == "Withdraw":
                 if account_type == "Savings":
                     if balance - amount >= 50:
@@ -92,11 +93,11 @@ class MakeBankTransaction(generics.GenericAPIView):
                                 cursor.execute("UPDATE banking_account SET balance = %s WHERE account_number= %s ", [str_balance, acc_number])
                         update_balance()
 
-                        
                         serializer.save()
                         return Response(serializer.data, status=status.HTTP_201_CREATED)
                     else:
                         return Response({"failed": "You Acount Should Always Have R50 or Above"}, status=status.HTTP_400_BAD_REQUEST)
+
                 elif account_type == "Credit":
                     if balance - amount >= -20000:
                         total_balance = balance - amount
